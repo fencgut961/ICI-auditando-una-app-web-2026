@@ -1,7 +1,7 @@
 # Simulación de ataque de fuerza bruta/diccionario con Wfuzz
 
 En este ejercicio vamos a simular un ataque de fuerza bruta/diccionario contra el **login del administrador**, usando una **wordlist pequeña** creada por vosotros y **Wfuzz**.  
-El objetivo es encontrar la contraseña real del admin: `admin123`, y luego usarla para entrar **sin SQLi**.
+El objetivo es encontrar la contraseña real del admin, y luego usarla para entrar **sin SQLi**.
 
 ---
 
