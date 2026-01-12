@@ -11,10 +11,8 @@ Primero no vamos a usar *rockyou* ni nada grande. Vamos a crear nuestra propia l
 
 1. Abrid una terminal en **Kali Linux**.
 2. Ejecutad:
-
-   ```bash
-   cd ~
-   nano admin-passlist.txt
+    `bashcd ~
+    nano admin-passlist.txt`
 
 3. Escribid una contraseña por líena. Por ejemplo: 
 
@@ -26,8 +24,7 @@ admin123
 qwerty
 
 4. Guardad y salid de nano con: 
-
-Ctrl + O, Enter, luego Ctrl + X
+Ctrl+O, Enter, luego Ctrl+X.
 
 ## Paso 2: Lanzar Wfuzz contra el endpoint de login
 
