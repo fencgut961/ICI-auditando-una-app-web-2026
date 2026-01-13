@@ -11,7 +11,7 @@ Primero no vamos a usar *rockyou* ni nada grande. Vamos a crear nuestra propia l
 
 1. Abrid una terminal en **Kali Linux**.
 2. Ejecutad:
-    `bashcd ~
+    `cd ~
     nano admin-passlist.txt`
 
 3. Escribid una contraseña por líena. Por ejemplo: 
