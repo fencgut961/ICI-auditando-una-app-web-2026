@@ -1,11 +1,4 @@
-# GUÍA COMPLETA DEL TALLER DE AUDITORÍA WEB CON IA
-## OWASP Juice Shop · Pentesting Web Moderno (2026)
-
----
-
-## 1. SQL INJECTION
-
-## 2. BURP SUITE: CONCEPTOS FUNDAMENTALES
+# BURP SUITE: CONCEPTOS FUNDAMENTALES
 
 Burp Suite es un **proxy de interceptación**.  
 Se sitúa entre el navegador y la aplicación web, permitiendo **ver, modificar y reenviar tráfico HTTP/HTTPS**.
@@ -19,9 +12,9 @@ Nada ocurre sin que Burp lo vea.
 
 ---
 
-## 4. INTERFAZ DE BURP SUITE Y COMPONENTES
+## 1. INTERFAZ DE BURP SUITE Y COMPONENTES
 
-### 4.1 Proxy
+### 1.1 Proxy
 
 Función:
 - Interceptar peticiones y respuestas
@@ -41,7 +34,7 @@ Uso en el taller:
 
 ---
 
-### 4.2 Repeater
+### 1.2 Repeater
 
 Función:
 - Repetir y modificar peticiones manualmente
@@ -57,7 +50,7 @@ Regla:
 ![Interfaz de Burp Suite](../SQL_INJECTION/img/Paso3.PNG)
 ---
 
-### 4.3 Intruder
+### 1.3 Intruder
 
 Función:
 - Automatizar ataques controlados
@@ -73,7 +66,7 @@ En versión Community es lento, pero suficiente para aprendizaje.
 ![Interfaz de Burp Suite](../SQL_INJECTION/img/Paso2.PNG)
 ---
 
-### 4.4 Decoder
+### 1.4 Decoder
 
 Función:
 - Codificar y decodificar datos
@@ -91,7 +84,7 @@ Muy útil para:
 
 ---
 
-### 4.5 Comparer
+### 1.5 Comparer
 
 Función:
 - Comparar respuestas HTTP
@@ -103,7 +96,7 @@ Función:
 ![Interfaz de Burp Suite](../SQL_INJECTION/img/Paso5.PNG)
 ---
 
-## 5. METODOLOGÍA DE AUDITORÍA
+## 2. METODOLOGÍA DE AUDITORÍA
 
 1. Definir alcance
 2. Discovery y enumeración
@@ -113,37 +106,3 @@ Función:
 6. Reporte
 
 ---
-
-## 6. CASO PRÁCTICO 1: SQL INJECTION
-
-### 6.1 Objetivo
-
-Detectar una SQL Injection en el buscador de productos y explotarla de forma controlada.
-
----
-
-### 6.2 Pasos guiados
-
-1. Abrir Burp Suite → Proxy → Open Browser
-2. Acceder a Juice Shop
-3. Usar el buscador con un término normal
-4. En Proxy → HTTP history localizar:
-   GET /rest/products/search?q=apple
-5. Enviar la petición a Repeater
-6. Modificar el parámetro q por:
-   '
-7. Enviar la petición
-
-Resultado esperado:
-- Error SQL  o satisfactorio→ vulnerabilidad confirmada
-
----
-
-### 6.3 Explotación
-
-Pista:
-- La consulta devuelve 9 columnas
-- Existe una tabla Users
-
-
-

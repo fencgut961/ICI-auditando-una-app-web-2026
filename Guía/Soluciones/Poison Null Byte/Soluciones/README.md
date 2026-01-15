@@ -1,4 +1,4 @@
-## Soluciones
+## Solución
 
 - `%25` representa el carácter `%`
 - `%2500` se decodifica finalmente como `%00`, que es el **Null Byte**
