@@ -29,7 +29,7 @@ Uso en el taller:
 - Detectar parámetros vulnerables
 - Identificar endpoints y APIs ocultas
 
-![Interfaz de Burp Suite](../SQL_INJECTION/img/Paso1.PNG)
+![Interfaz de Burp Suite](../img/Paso1.PNG)
 
 
 ---
