@@ -10,7 +10,9 @@ Una vez instalado Docker, solamente necesitas ejecutar el siguiente comando:
 
 Abrimos una terminal CMD o Powershell y hacemos los siguientes comandos:
 
-1. `docker pull fencgut961/juice-shop` Nos traemos la imagen
-2. `docker run --rm -p 3000:3000 --name juice-shop fencgut961/juice-shop` Montamos la imagen
+1. Nos traemos la imagen:
+    `docker pull bkimminich/juice-shop` o `docker pull fencgut961/juice-shop` 
+2. Montamos la imagen:
+    `docker run --rm -p 3000:3000 --name juice-shop bkimminich/juice-shop` o `docker run --rm -p 3000:3000 --name juice-shop fencgut961/juice-shop`
 3. Dejamos esa terminal abierta
 4. Ya deberiamos poder acceder a la web desde el navegador en: http://localhost:3000/
